@@ -49,7 +49,7 @@ public class ReportController {
     
     @GetMapping("/")
     public String indexPage(Model model) {
-        model.addAttribute("search", new SearchRequest()); // form binding object
+        model.addAttribute("search", new SearchRequest()); 
         init(model);
         return "index";
     }
